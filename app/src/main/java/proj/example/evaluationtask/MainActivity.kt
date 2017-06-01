@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity() {
                 ActivityCompat.startActivity(this@MainActivity,intent,options.toBundle())
             }
         })
+        adapter.setHasStableIds(true)
         recyclerView.adapter = adapter
+
         var progressDialog=ProgressDialog.show(this,"Loading","")
         progressDialog.setCanceledOnTouchOutside(false)
 
