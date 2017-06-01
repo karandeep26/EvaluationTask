@@ -2,6 +2,7 @@ package proj.example.evaluationtask.service
 
 import io.reactivex.Observable
 import proj.example.evaluationtask.Model
+import retrofit2.Response
 import retrofit2.http.GET
 
 /**
@@ -9,5 +10,5 @@ import retrofit2.http.GET
  */
 interface IGetData {
     @GET("jsonparsetutorial.txt")
-    fun getData(): Observable<Model>
+    fun getData(): Observable<Response<Model>>
 }

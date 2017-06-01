@@ -13,7 +13,6 @@ class ApplicationClass:Application() {
     override fun onCreate() {
         super.onCreate()
 
-
     }
     companion object{
         var retrofit=Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())

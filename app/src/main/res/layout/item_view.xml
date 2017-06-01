@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/rank_label"
+                android:text="@string/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/rank_value"
+                android:layout_toRightOf="@+id/rank_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:paddingTop="5dp"
+                android:layout_below="@+id/rank_label"
+                android:id="@+id/country_label"
+                android:text="@string/country_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:paddingTop="5dp"
+                android:id="@+id/country_value"
+                android:layout_below="@id/rank_value"
+                android:layout_toRightOf="@+id/country_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:layout_below="@+id/country_label"
+                android:paddingTop="5dp"
+                android:id="@+id/population_label"
+                android:text="@string/population_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:paddingTop="5dp"
+                android:id="@+id/population_value"
+                android:layout_below="@+id/country_value"
+                android:layout_toRightOf="@id/population_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="#FBFBFB"
+                android:padding="2dp"
+                android:id="@+id/flag"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
